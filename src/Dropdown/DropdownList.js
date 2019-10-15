@@ -20,7 +20,7 @@ export default () => {
     <ul data-id="dropdown" className="dropdown">
       {
         list.map((li, i) => (
-          <li key={i} className={selected === li ? 'active': undefined}><a href='#' onClick={(e) => handleClick(e, li)}>{li}</a></li>
+          <li key={i} style={selected === li ? {color: '#5380F7'} : undefined}><a href='#' onClick={(e) => handleClick(e, li)}>{li}</a></li>
         ))
       }
   </ul>
